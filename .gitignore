@@ -1,9 +1,0 @@
-.config/*
-
-!.config/eww
-!.config/kitty
-!.config/nvim
-!.config/btop
-!.config/cava
-!.config/rofi
-!.config/hypr
