@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
     config.environment.systemPackages = with pkgs; [
         git
+        zip
         gcc
         wget
         docker
