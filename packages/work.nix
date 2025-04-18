@@ -7,7 +7,7 @@
         docker
         vscode
         nodejs_23
-        dotnet-sdk
+        dotnet-sdk_9
         python313Full
     ];
 }
