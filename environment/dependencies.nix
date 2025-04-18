@@ -2,7 +2,6 @@
     environment.systemPackages = with pkgs; [
         #eww deps
         jq
-        # ags
         swww
         dunst
         socat
@@ -14,6 +13,7 @@
         libnotify
         rofi-wayland
         brightnessctl
+        networkmanagerapplet
 
 
         #terminal
@@ -24,6 +24,12 @@
         neofetch
         cliphist
         playerctl
+
+        #cursor
+        bibata-cursors
+
+        #gtk-theme
+        gruvbox-dark-gtk
     ];
 
     services.upower.enable = true;
