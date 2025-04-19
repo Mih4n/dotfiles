@@ -4,7 +4,7 @@
         hardware.url = "github:NixOS/nixos-hardware/master";
 
         home-manager = {
-            url = "github:nix-community/home-manager/release-23.11";
+            url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
@@ -27,8 +27,6 @@
         };
         homeConfigurations.mih4n = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
-            inherit system;
-            specialArgs = { inherit inputs; };
 
             modules = [ 
                 ./home.nix 
