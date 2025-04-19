@@ -7,7 +7,10 @@
         docker
         vscode
         nodejs_23
-        dotnet-sdk_9
         python313Full
+
+        #dotnet
+        dotnet-sdk_9
+        omnisharp-roslyn
     ];
 }

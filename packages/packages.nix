@@ -2,6 +2,7 @@
     imports = [
         ./messangers.nix
         ./office-work.nix
+        ./games.nix
         ./work.nix
     ];
 
