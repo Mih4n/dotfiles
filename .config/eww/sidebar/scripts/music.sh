@@ -47,7 +47,7 @@ case $1 in
         echo '{"yes": true}'
       fi
 
-      sleep 0.01
+      sleep 0.2
     done
   ;;
 

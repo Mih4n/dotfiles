@@ -26,9 +26,7 @@ window {
     height: 600;
     width: 600;
 
-    border: 1;
     border-radius: 10;
-    border-color: @bgStatusline3;
 }
 
 mainbox {

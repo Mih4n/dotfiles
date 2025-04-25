@@ -29,6 +29,9 @@
         hyprpicker
 
         #apps
+        gvfs
+        polkit
+        udisks2
         nautilus
         spotify
     ];

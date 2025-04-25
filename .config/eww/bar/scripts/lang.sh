@@ -8,7 +8,7 @@ case $command in
             lang=`hyprctl devices -j | jq -r '.keyboards[] | .active_keymap' | tail -n1 | cut -c1-2 | tr 'a-z' 'A-Z'`
             printf '{"status": "%s", "lang": "%s"}\n' \
                 "none" "${lang}"
-            sleep 0.01
+            sleep 0.2
         done
     ;;
     switch)

@@ -1,6 +1,4 @@
 { pkgs, user, ... }: {
-    programs.zsh.enable = true;
-
     users.users.mih4n = {
         isNormalUser = true;
         description = "mih4n";

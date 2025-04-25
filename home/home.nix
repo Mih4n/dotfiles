@@ -8,12 +8,21 @@
     gtk = {
         enable = true;
         theme = {
-            name = "gruvbox-dark-gtk";
-            package = pkgs.gruvbox-dark-gtk;
+            name = "Gruvbox-Dark";
+            package = pkgs.gruvbox-gtk-theme;
+        };
+        iconTheme = {
+            name = "Papirus-Dark";
+            package = pkgs.papirus-icon-theme;
         };
         cursorTheme = {
             name = "Bibata-Modern-Ice";
             package = pkgs.bibata-cursors;
         };
+    };
+    wayland.windowManager.hyprland = {
+        plugins = [
+            pkgs.hyprlandPlugins.hyprgrass
+        ];
     };
 }

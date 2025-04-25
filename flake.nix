@@ -20,7 +20,7 @@
             specialArgs = { inherit inputs; };
 
             modules = [
-                ./configuration.nix
+                ./config/configuration.nix
 
                 inputs.hardware.nixosModules.microsoft-surface-common
             ];
@@ -29,7 +29,7 @@
             inherit pkgs;
 
             modules = [ 
-                ./home.nix 
+                ./home/home.nix
             ];
         };
     };
