@@ -6,13 +6,11 @@
     ./drivers/drivers.nix
     ./users.nix
     
-    ./environment/env.nix
+    ./env/env.nix
     ./modules/modules.nix
     ./services/services.nix
   ];
   services.printing.enable = true;
 
   i18n.defaultLocale = "en_US.UTF-8";
-
-  system.stateVersion = "24.11";
 }

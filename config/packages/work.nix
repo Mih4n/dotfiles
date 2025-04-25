@@ -2,6 +2,7 @@
     config.environment.systemPackages = with pkgs; [
         git
         zip
+        unzip
         gcc
         wget
         docker
