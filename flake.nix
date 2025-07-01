@@ -14,7 +14,7 @@
         };
     };
 
-    outputs = { nixpkgs, home-manager, ... }@inputs: 
+    outputs = { nixpkgs, home-manager, nix-alien, ... }@inputs: 
     let
         lib = nixpkgs.lib;
         system = "x86_64-linux";
@@ -26,7 +26,7 @@
 
             modules = [
                 ./config/configuration.nix
-
+                
                 inputs.hardware.nixosModules.microsoft-surface-common
             ];
         };

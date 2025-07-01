@@ -13,5 +13,7 @@
         #dotnet
         dotnet-sdk_9
         omnisharp-roslyn
+
+        gnuplot_qt
     ];
 }
