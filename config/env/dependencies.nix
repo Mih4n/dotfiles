@@ -30,6 +30,19 @@
 
         #gtk-theme
         gruvbox-dark-gtk
+
+        fish
+        brightnessctl
+        ddcutil
+        cava
+        networkmanager
+        lm_sensors
+        grim
+        swappy
+        qalculate-gtk
+        fontconfig
+        app2unit
+        qt6.qtdeclarative
     ];
 
     services.upower.enable = true;

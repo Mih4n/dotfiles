@@ -7,12 +7,16 @@
         wget
         docker
         vscode
-        nodejs_23
-        python313Full
-
+        steam-run
+        
         #dotnet
         dotnet-sdk_9
         omnisharp-roslyn
+        zlib
+        openssl
+        curl
+        libuuid
+        zed-editor
 
         gnuplot_qt
     ];

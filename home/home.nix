@@ -1,6 +1,7 @@
-{ lib, pkgs, ... }: {
+{ lib, pkgs, inputs, ... }: {
     imports = [
         ./env/env.nix
+        ./packages/packages.nix
         ./programs/programs.nix
     ];
 

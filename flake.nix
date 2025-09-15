@@ -12,6 +12,8 @@
             url = "github:thiagokokada/nix-alien";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        zen-browser.url = "github:0xc000022070/zen-browser-flake";
     };
 
     outputs = { nixpkgs, home-manager, nix-alien, ... }@inputs: 
@@ -27,11 +29,12 @@
             modules = [
                 ./config/configuration.nix
                 
-                inputs.hardware.nixosModules.microsoft-surface-common
+                # inputs.hardware.nixosModules.microsoft-surface-common
             ];
         };
         homeConfigurations.mih4n = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
+            extraSpecialArgs = { inherit inputs; };
 
             modules = [ 
                 ./home/home.nix
