@@ -14,6 +14,11 @@
         };
 
         zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
+        caelestia-shell = {
+            url = "github:caelestia-dots/shell";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = { nixpkgs, home-manager, nix-alien, ... }@inputs: 
@@ -34,7 +39,7 @@
         };
         homeConfigurations.mih4n = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
-            extraSpecialArgs = { inherit inputs; };
+            extraSpecialArgs = { inherit inputs; inherit system; };
 
             modules = [ 
                 ./home/home.nix
