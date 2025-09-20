@@ -4,9 +4,9 @@
     ./packages/packages.nix
     ./programs/programs.nix
     ./drivers/drivers.nix
+    ./env/env.nix
     ./users.nix
     
-    ./env/env.nix
     ./modules/modules.nix
     ./services/services.nix
   ];

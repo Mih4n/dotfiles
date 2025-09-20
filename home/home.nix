@@ -1,6 +1,5 @@
 { lib, config, pkgs, system, inputs, ... }: {
     imports = [
-        ./env/env.nix
         ./packages/packages.nix
         ./programs/programs.nix
     ];
@@ -9,11 +8,5 @@
         username = "mih4n";
         homeDirectory = "/home/mih4n";
         stateVersion = "24.11";
-    };
-
-    wayland.windowManager.hyprland = {
-        plugins = [
-            pkgs.hyprlandPlugins.hyprgrass
-        ];
-    };
+    }; 
 }

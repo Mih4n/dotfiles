@@ -1,7 +1,13 @@
 {
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-        hardware.url = "github:NixOS/nixos-hardware/master";
+        zen-browser.url = "github:0xc000022070/zen-browser-flake";
+        hyprland.url = "github:hyprwm/Hyprland";
+
+        hardware = { 
+            url = "github:NixOS/nixos-hardware/master";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
 
         home-manager = {
             url = "github:nix-community/home-manager";
@@ -12,8 +18,6 @@
             url = "github:thiagokokada/nix-alien";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
         caelestia-shell = {
             url = "github:caelestia-dots/shell";
@@ -33,7 +37,6 @@
 
             modules = [
                 ./config/configuration.nix
-                
                 # inputs.hardware.nixosModules.microsoft-surface-common
             ];
         };
@@ -43,6 +46,7 @@
 
             modules = [ 
                 ./home/home.nix
+                inputs.caelestia-shell.homeManagerModules.default
             ];
         };
     };
