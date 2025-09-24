@@ -7,6 +7,8 @@
     hardware.nvidia = {
         open = false;
         modesetting.enable = true;
+
+        nvidiaSettings = true;
         
         prime = {
             sync.enable = true;

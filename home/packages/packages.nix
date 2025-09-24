@@ -1,7 +1,9 @@
-{ config, pkgs, system, inputs, ...}: {
-    home.packages = with pkgs; [
-        inputs.zen-browser.packages."${system}".default
-        oh-my-zsh
-        oh-my-posh
+{ config, pkgs, ... }: {
+    imports = [
+        ./messangers.nix
+        ./office-work.nix
+        ./work.nix
     ];
+
+    nixpkgs.config.allowUnfree = true;
 }

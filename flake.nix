@@ -6,7 +6,6 @@
 
         hardware = { 
             url = "github:NixOS/nixos-hardware/master";
-            inputs.nixpkgs.follows = "nixpkgs";
         };
 
         home-manager = {
@@ -37,7 +36,7 @@
 
             modules = [
                 ./config/configuration.nix
-                # inputs.hardware.nixosModules.microsoft-surface-common
+                inputs.hardware.nixosModules.microsoft-surface-common
             ];
         };
         homeConfigurations.mih4n = home-manager.lib.homeManagerConfiguration {
