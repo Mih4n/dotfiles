@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-    config.environment.systemPackages = with pkgs; [
+    home.packages = with pkgs; [
         discord
         thunderbird
         telegram-desktop

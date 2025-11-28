@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
-    ./packages/packages.nix
     ./programs/programs.nix
     ./drivers/drivers.nix
     ./env/env.nix
@@ -15,4 +14,6 @@
   i18n.defaultLocale = "en_DK.UTF-8";
 
   system.stateVersion = "24.11";
+
+  nixpkgs.config.allowUnfree = true;
 }

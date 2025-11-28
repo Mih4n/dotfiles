@@ -7,7 +7,7 @@
     };
 
     environment.sessionVariables = {
-        FLAKE = "/home/mih4n/nixos";
+        NH_FLAKE = "/home/mih4n/nixos";
     };
 
     environment.systemPackages = with pkgs; [
