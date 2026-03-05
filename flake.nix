@@ -36,7 +36,6 @@
 
             modules = [
                 ./config/configuration.nix
-                inputs.hardware.nixosModules.microsoft-surface-common
             ];
         };
         homeConfigurations.mih4n = home-manager.lib.homeManagerConfiguration {
