@@ -4,11 +4,6 @@
         ./fish.nix
         ./shell.nix
         ./nextcloud.nix
-        ./caelestia.nix
+        ./oh-my-posh.nix
     ];
-
-    programs.starship = {
-        enable = true;
-        enableFishIntegration = true; 
-    };
 }

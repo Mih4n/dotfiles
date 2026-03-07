@@ -2,7 +2,7 @@
     programs.caelestia = {
         enable = true;
         systemd = {
-            enable = false;
+            enable = true;
             target = "graphical-session.target";
             environment = [];
         };

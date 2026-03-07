@@ -3,14 +3,17 @@
         enable = true;
 
         shellInit = ''
-            set fish_greeting
+            set -x EDITOR code
+        '';
 
-            set -x EDITOR nvim
+        interactiveShellInit = ''
+            fish_vi_key_bindings
         '';
 
         shellAliases = {
             lf = "lfcd";
             os = "nh os";
+            home = "nh home";
         };
     };
 }
